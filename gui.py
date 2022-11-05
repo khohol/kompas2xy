@@ -3,7 +3,7 @@ import main
 
 sg.theme('Dark')
 
-layout = [  [sg.Text('Дані з компасу:'), sg.Input(key='-INPUT-')],
+layout = [  [sg.Text('Дані з компасу:'), sg.Multiline(key='-INPUT-', size=(40,15))],
             [sg.Text('Знаків після коми:'), sg.Input(key='-FLOAT-', default_text='2')],
             [sg.Button('Конвертувати', key='-CONVERT-'), sg.Button('Exit')],
             [sg.Text('Х', size=(15,0)), sg.Text('Y', size=(15,0)), sg.Text('Z', size=(15,0))],
